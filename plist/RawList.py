@@ -61,7 +61,7 @@ for i in range(blength // 2):
 
 print(lst)
 
-"""
+
 
 
 my_list = []
@@ -84,3 +84,9 @@ while swapped:
 
 print("\nSorted:")
 print(my_list)
+
+"""
+
+data_sheet = [200, 300, 50, 10, 100, 150, 300]
+new_data_sheet = data_sheet[ : ]
+print(f'The new data sheet is here: {new_data_sheet}')
