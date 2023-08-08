@@ -3,3 +3,4 @@ winterSeasonFruitlist = ["Chestnuts","Grapefruit","Lemons","Oranges","Tangerines
 springSeasonFruitList = ["Apricots","Avocado","Mango","Pineapple","Rhubarb","Strawberries","Artichoke","Asparagus","Carrots","Celeriac","Chives","Collards","Fava Beans","Fennel","Fiddlehead Ferns","Morels","Mustard Greens"]
 summerSeasonFruitList = ["Blackberries","Blueberries","Nectarines","Peaches","Plums","Raspberries","Tomatoes","Watermelon","Broccoli","Cucumber","Green Beans","Zucchini"]
 fallSeasonFruitList = ["Apples","Cranberries","Figs","Grapes","Pears","Pomegranate","Quince","Butternut Squash","Cauliflower","Garlic","Ginger","Mushrooms","Potatoes","Pumpkin","Sweet Potatoes","Swiss Chard"]
+# The total list is 4 - four season fruts and vegetables
