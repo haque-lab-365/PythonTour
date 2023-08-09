@@ -14,3 +14,5 @@ jordan_Polya_numbers = [1, 2, 4, 6, 8, 12, 16, 24, 32, 36, 48, 64, 72]
 kolakoski_sequence = [1, 2, 2, 1, 1, 2, 1, 2, 2, 1, 2, 2, 1, 1, 2, 1, 1]
 lucas_numbers_ln = [2, 1, 3, 4, 7, 11, 18, 29, 47, 76, 123, 199] 
 markov_numbers_mn = [1, 2, 5, 13, 29, 34, 89, 169, 194, 233, 433]
+
+# The file is not uploaded yet.
