@@ -14,209 +14,131 @@ tplist1 = 12.5, 24.5, 36.5, 46.10
 dictdata = {"cat":"cha", "dog": "chien", "horse": "cheval"}
 print(dictdata)
 
+hundred_eng_fr_dic = {
+                        "time":"temps",
+                        "year":"année",
+                        "people":"personnes",
+                        "way":"chemin",
+                        "day":"jour",
+                        "man":"homme",
+                        "thing":"chose",
+                        "woman":"femme",
+                        "life":"vie",
+                        "child":"enfant",
+                        "world":"monde",
+                        "school":"école",
+                        "state":"État",
+                        "family":"famille",
+                        "student":"étudiant",
+                        "group":"groupe",
+                        "country":"pays",
+                        "problem":"problème",
+                        "hand":"main",
+                        "part":"partie",
+                        "place":"lieu",
+                        "case":"cas",
+                        "week":"semaine",
+                        "company":"entreprise",
+                        "system":"système",
+                        "program":"programme",
+                        "question":"question",
+                        "work":"travail",
+                        "governme":"gouvernement",
+                        "number":"nombre",
+                        "night":"nuit",
+                        "point":"indiquer",
+                        "home":"maison",
+                        "water":"eau",
+                        "room":"chambre",
+                        "mother":"mère",
+                        "area":"zone",
+                        "money":"argent",
+                        "story":"histoire",
+                        "fact":"fait",
+                        "month":"mois",
+                        "lot":"parcelle",
+                        "right":"droite",
+                        "study":"étude",
+                        "book":"livre",
+                        "eye":"œil",
+                        "job":"emploi",
+                        "word":"mot",
+                        "business":"entreprise",
+                        "issue":"problème",
+                        "side":"côté",
+                        "kind":"gentil",
+                        "head":"tête",
+                        "house":"maison",
+                        "service":"service",
+                        "friend":"ami",
+                        "father":"père",
+                        "power":"pouvoir",
+                        "hour":"heure",
+                        "game":"jeu",
+                        "line":"doubler",
+                        "end":"fin",
+                        "member":"membre",
+                        "law":"loi",
+                        "car":"voiture",
+                        "city":"ville",
+                        "communit":"communautaire",
+                        "name":"nom",
+                        "presiden":"présidente",
+                        "team":"équipe",
+                        "minute":"minute",
+                        "idea":"idée",
+                        "kid":"enfant",
+                        "body":"corps",
+                        "informat":"informat",
+                        "back":"dos",
+                        "parent":"parent",
+                        "face":"affronter",
+                        "others":"autres",
+                        "level":"niveau",
+                        "office":"bureau",
+                        "door":"porte",
+                        "health":"santé",
+                        "person":"personne",
+                        "art":"art",
+                        "war":"guerre",
+                        "history":"histoire",
+                        "party":"faire la fête",
+                        "result":"résultat",
+                        "change":"changement",
+                        "morning":"matin",
+                        "reason":"raison",
+                        "research":"recherche",
+                        "girl":"fille",
+                        "guy":"gars",
+                        "moment":"moment",
+                        "air":"air",
+                        "teacher":"professeur",
+                        "force":"forcer",
+                        "ducation":"ducation"
+                    }
 
-eng_word	
-time
-year
-people
-way
-day
-man
-thing
-woman
-life
-child
-world
-school
-state
-family
-student
-group
-country
-problem
-hand
-part
-place
-case
-week
-company
-system
-program
-question	
-work		
-governme	
-number		
-night		
-point		
-home		
-water		
-room		
-mother		
-area		
-money		
-story		
-fact		
-month		
-lot			
-right		
-study		
-book		
-eye			
-job			
-word		
-business	
-issue		
-side		
-kind		
-head		
-house		
-service		
-friend		
-father		
-power		
-hour		
-game		
-line		
-end			
-member		
-law			
-car			
-city		
-communit	
-name		
-presiden	
-team		
-minute		
-idea		
-kid			
-body		
-informat	
-back		
-parent		
-face		
-others		
-level		
-office		
-door		
-health		
-person		
-art			
-war			
-history		
-party		
-result		
-change		
-morning		
-reason		
-research	
-girl		
-guy			
-moment		
-air			
-teacher		
-force	
-ducation
+#print(hundred_eng_fr_dic) 
 
--------------------------
+words = ['cat', 'dog', 'time', 'man', 'friend','head', 'ducation']
 
-fr_word
-temps
-année
-personnes
-chemin
-jour
-homme
-chose
-femme
-vie
-enfant
-monde
-école
-État
-famille
-étudiant
-groupe
-pays
-problème
-main
-partie
-lieu
-cas
-semaine
-entreprise
-système
-programme
-question
-travail
-gouvernement
-nombre
-nuit
-indiquer
-maison
-eau
-chambre
-mère
-zone
-argent
-histoire
-fait
-mois
-parcelle
-droite
-étude
-livre
-œil
-emploi
-mot
-entreprise
-problème
-côté
-gentil
-tête
-maison
-service
-ami
-père
-pouvoir
-heure
-jeu
-doubler
-fin
-membre
-loi
-voiture
-ville
-communautaire
-nom
-présidente
-équipe
-minute
-idée
-enfant
-corps
-informat
-dos
-parent
-affronter
-autres
-niveau
-bureau
-porte
-santé
-personne
-art
-guerre
-histoire
-faire la fête
-résultat
-changement
-matin
-raison
-recherche
-fille
-gars
-moment
-air
-professeur
-forcer
-ducation
+for word in words:
+    if word in hundred_eng_fr_dic:
+        print(word, "|En:--> Fr: ", hundred_eng_fr_dic[word])
+    else:
+        print(word, "is not in dictionary")
+
+print("Accessing dictionary with keys...")
+
+for key in sorted(hundred_eng_fr_dic.keys()):
+    print(f'The English word {key} means {hundred_eng_fr_dic[key]} in French')
+
+
+print("Accessing dictionary with items (key  and value)...")
+
+for english, french in hundred_eng_fr_dic.items():
+    print(f' Different way: The English word {english} means {french} in French')
+
+
+print("Access only values from the dictionary")
+for french in hundred_eng_fr_dic.values():
+    print(french)
