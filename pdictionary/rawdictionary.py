@@ -1,4 +1,6 @@
 
+
+'''
 dictionary = {"cat": "chat", "dog": "chien", "horse": "cheval"}
 phone_numbers = {'boss': 5551234567, 'Suzy': 22657854310}
 empty_dictionary = {}
@@ -142,3 +144,52 @@ for english, french in hundred_eng_fr_dic.items():
 print("Access only values from the dictionary")
 for french in hundred_eng_fr_dic.values():
     print(french)
+
+
+dictionary = {"cat": "chat", "dog": "chien", "horse": "cheval"}
+
+dictionary['cat'] = 'minou'
+print(dictionary)
+
+
+dictionary['rat'] = 'Grrr...'
+print(dictionary)
+
+dictionary['cow'] = 'Good'
+print(dictionary)
+
+dictionary.update({"duck": "canard", "hen": "kok"})
+print(dictionary)
+
+#del dictionary['rat']
+#print(dictionary)
+
+dictionary.popitem()
+print(dictionary)
+'''
+
+school_class = {}
+
+while True:
+
+    name = input("Enter the students name: ")
+    if name == "":
+        break 
+
+    score = int(input("Enter the student's score(0 - 10): "))
+    if score not in range(0, 11):
+        break
+
+    if name in school_class:
+        school_class[name] += (score, )
+    else:
+        school_class[name] = (score, )
+
+for name in sorted(school_class.keys()):
+    adding = 0
+    counter = 0
+
+    for score in school_class[name]:
+        adding += score
+        counter += 1
+    print(name, ":", adding / counter)
