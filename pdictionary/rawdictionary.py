@@ -166,7 +166,7 @@ print(dictionary)
 
 dictionary.popitem()
 print(dictionary)
-'''
+
 
 school_class = {}
 
@@ -193,3 +193,26 @@ for name in sorted(school_class.keys()):
         adding += score
         counter += 1
     print(name, ":", adding / counter)
+
+'''
+
+from random import randrange
+for i in range(10):
+    print(randrange(8))
+
+
+for i in range(5):
+    for j in range(10):
+        print("+-------+", end=" ")
+        print(i)
+        print("+-------+", end=" ")
+    
+    print()
+
+
+val1 = input(print("Enter value"))
+b = len(val1) * 2
+print(b)
+            
+
+
